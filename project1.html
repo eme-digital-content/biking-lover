@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biking Lover 🚴‍♂️</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #003333;
+        font-size: 3em;
+        padding: 4px;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 4px;
+        font-size: 18px;
+        border-radius: 4px;
+        color: #003333;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .explore{
+        color: #e5edf3;
+      }
+
+      .header {
+        background: #2eb5b4;
+        border-radius: 6px;
+        padding: 1px;
+      }
+
+      body {
+        background-color: #e5edf3;
+        background: linear-gradient(180deg, #2eb5b4, #e5edf3);
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0 0 10px;
+        padding: 12px;
+        color: #878b8f;
+        line-height: 2;
+        text-align: justify;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #2eb5b4;
+        color: #e5edf3;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 15px 20px;
+        border: 1px solid #2eb5b4;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #e5edf3;
+        color: #2eb5b4;
+        border: 1px solid #2eb5b4;
+        transition: all 200ms ease-in-out;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background-color: #E1E1DF;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .routes {
+        display: block;
+        text-align: center;
+        color: #2eb5b4;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bolder;
+      }
+
+      .routes:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        background-color: #2eb5b4;
+        color: #003333;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 4px;
+        padding: 10px;
+      }
+
+      .author {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .author:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>I 💖 Biking! 🚴‍♂️</h1>
+        <h2>Especially <span class="explore">to explore</span> my city</h2>
+      </div>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/504/original/bike.jpg?1676990848"
+        alt="Biking around Porto Alegre"
+      />
+      <p>
+        Biking is a healthy, low-impact exercise that <strong>can be enjoyed by people of all ages</strong>, from young children to older adults. It's also fun, cheap, and good for the environment.
+        <br />
+        Additionally, biking is a good way to <strong>explore the city and discover new wonderful places</strong>. Do you want to know the best routes in Porto Alegre, Brazil?
+      </p>
+      <a
+        href="https://www.alltrails.com/en-gb/brazil/rio-grande-do-sul/porto-alegre/road-biking"
+        target="_blank"
+        class="routes"
+      >
+        Best Road Biking Trails in Porto Alegre
+      </a>
+      <button class="booking-button">Book a session 🚴‍♂️</button>
+      <hr />
+      <div class="footer">
+        <em>This page was built by
+        <a
+          href="https://www.linkedin.com/in/mbellorin2/"
+          target="_blank"
+          class="author"
+        >
+          Mariana B.A.</em>
+        </a>
+      </div>
+    </div>
+    <script>
+      function bookSession() {
+        let name = prompt("What's your name?");
+        let email = prompt("Whast's your email address?");
+        let emoji = prompt("What's your favorite emoji?");
+
+        if(name === "" || email === "" || emoji === "") {
+          alert("🚨You need to answer all the questions🚨");
+          bookSession();
+        } else if (name === "" || email === "" || emoji === "") {
+          alert("🚨You need to answer all the questions🚨");
+          bookSession();
+        } else {
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email. Meanwhile, have a lot of rides! " +
+            emoji
+        );
+        }
+      }
+      let bookingButton = document.querySelector(".booking-button");
+      bookingButton.addEventListener("click", bookSession);
+    </script>
+  </body>
+</html>

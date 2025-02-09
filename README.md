@@ -1,4 +1,4 @@
-## Biking Lover - SheCodes Basic
+## Biking Lover - SheCodes Introduction to Coding
 
 Project to explore HTML and CSS fundamentals, based on a topic of the student's interest.
 
